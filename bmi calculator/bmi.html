@@ -15,13 +15,29 @@
         <p class="text">Weight</p>
         <input type="text" placeholder="enter your weight in kg" id="weight">
         <p class="text">Result:</p>
-        <input type="text" placeholder="result" id="result">
+        <input type="text"  id="result" readonly>
         <br> <br> <br> <br>
         
-        <button id="btn">Calulcate</button>
-        
-       
+        <button id="btn" onclick="bmi()">Calculate</button>
     </div>
+
+    <script>
+        function bmi(){
+            var h = document.getElementById('height').value;
+            var w = document.getElementById('weight').value;
+           
+
+            if (h==="" || w===""){
+                alert("please enter the height and weight!");
+                return
+            } 
+
+            var bmi =   w/((h/100)*(h/100));
+            var total= bmi.toFixed(2);        
+            // tofixed is used to giver the two values only after the decimal
+            document.getElementById('result').value = "your BMI is" + total
+         }
+    </script>
 
 </body>
 </html>

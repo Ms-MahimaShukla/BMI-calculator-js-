@@ -38,7 +38,7 @@ h2{
 #height,#weight, #result{
     color:#070707;
     text-align:left;
-    font-size:20px;
+    font-size:15px;
     font-weight:200px;
     border:1px solid #0b0b0b;
     width:300px;
@@ -53,7 +53,8 @@ h2{
 }
 
 #result{
-    color:#140a9b;
+    color:#c7bbbc;
+    font-size:15px;
     
 }
 
