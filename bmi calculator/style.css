@@ -1,0 +1,73 @@
+body{
+    
+    margin:0;
+    padding:0;
+    text-align:center;
+    height:90vh;
+    font-weight:bold;
+    backdrop-filter: blur(2px); /* Adds blur */
+    background-image: url("https://png.pngtree.com/png-vector/20220126/ourmid/pngtree-controlling-bmi-with-scale-and-chart-medical-slim-fatness-vector-png-image_44232454.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+div{
+    width:500px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    background-color: rgba(0,0,0,0.5);
+    transform:translate(-50%,-50%);
+    padding:5px;
+    box-shadow:2px 2px 20px #919191;
+
+}
+h2{
+    font-size:30px;
+    font-weight:600;
+    color:#090909;
+
+}
+.text{
+    text-align:left;
+    margin-left:100px;
+    color:#181717;
+}
+
+#height,#weight, #result{
+    color:#070707;
+    text-align:left;
+    font-size:20px;
+    font-weight:200px;
+    border:1px solid #0b0b0b;
+    width:300px;
+    background-color: transparent;
+    border-radius:2px;
+    outline:none;
+}
+::placeholder {
+    color: rgb(26, 47, 84);
+    font-size:10px;
+    
+}
+
+#result{
+    color:#140a9b;
+    
+}
+
+#btn{
+    font-size:inherti;
+    margin-top:10px;
+    border:none;
+    cursor:pointer;
+    width:150px;
+    color:#0b0b0b;
+    background-color: azure;
+    padding:10px;
+
+}
+#btn:hover{
+    box-shadow:1px 1px 1px #341f34;
+}
